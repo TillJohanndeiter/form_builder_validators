@@ -37,7 +37,7 @@ class TimeValidator extends TranslatedValidator<String> {
   /// Examples: 23:59, 11:59 PM
   /// {@endtemplate}
   static final RegExp _time = RegExp(
-    r'^(?:[01]?\d|2[0-3]):[0-5]?\d(?::[0-5]?\d)?$|^(?:0?[1-9]|1[0-2]):[0-5]?\d(?::[0-5]?\d)?\s?(?:[AaPp][Mm])$',
+    r'^(?:[01]?\d|2[0-3]):[0-5]?\d(?::[0-5]?\d(?:\.\d{1,3})?)?$|^(?:0?[1-9]|1[0-2]):[0-5]?\d(?::[0-5]?\d(?:\.\d{1,3})?)?\s?(?:[AaPp][Mm])?$',
   );
 
   @override
